@@ -26,44 +26,90 @@ Willkommen im THPT-Repository, einem modularen Webprojekt mit vollständig versc
 ---
 
 📁 Projektstruktur
-
-`
+```
 THPT/
-├── index.html                        # Hauptseite des Repos
-├── shared-assets/                   # Zentrale CSS, Bilder, Fonts
+├── index.html                          # Hauptseite des Repos
+├── 404.html                            # Fehlerseite bei ungültigen Pfaden
+├── README.md                           # Projektbeschreibung, Struktur, Anleitung
+│
+├── shared-assets/                      # Zentrale CSS, Bilder, Fonts
 │   ├── style.css
 │   └── logo.png
-├── shared-scripts/                  # Globale JavaScript-Funktionen
-│   └── menu.js
-├── shared-data/                     # JSON-Dateien für Navigation & Inhalte
-│   └── navigation.json
-├── shared-components/              # HTML-Templates (Header, Footer)
+│
+├── shared-scripts/                     # Globale JavaScript-Funktionen
+│   ├── menu.js                         # Menü-Logik (lädt navigation.json)
+│   ├── menu-builder.js                 # Baut Menü aus JSON-Daten
+│   └── link-map.js                     # Thematische & externe Linklogik
+│
+├── shared-data/                        # JSON-Daten für Navigation & Hash-BOx
+│   ├── navigation.json                 # Automatisch generierte Seitenstruktur
+│   └── block-box.json                  # Hash-Datenbank aller Pfade als Blöcke
+│
+├── shared-components/                  # Wiederverwendbare HTML-Elemente
 │   ├── header.html
 │   └── footer.html
-├── docs/                            # Dokumentation (z. B. Manpages)
+│
+├── docs/                               # Dokumentation (z. B. Manpages)
 │   └── thptx.1.roff
-├── scripts/                         # Python-Tools zur Automatisierung
-│   └── generate_navigation.py
-├── c-modules/                       # C-Module für Hashing/Validierung
+│
+├── scripts/                            # Python-Tools zur Automatisierung
+│   ├── generate_navigation.py          # Erstellt navigation.json aus echter Struktur
+│   ├── hash_blocks.py                  # Erstellt block-box.json mit SHA256-Hashes
+│   └── validate-navigation.py          # Prüft, ob alle Links in navigation.json gültig sind
+│
+├── c-modules/                          # Systemnahe Module (z. B. Hashing)
 │   └── hash.c
-├── THPTx/                           # Unterprojekt 1
+│
+├── .github/
+│   └── workflows/
+│       └── navigation.yml              # GitHub Action zur Automatisierung
+│
+├── THPTx/                              # Unterprojekt 1
 │   ├── index.html
 │   ├── use-cases.html
 │   ├── architecture.html
 │   ├── subsite-1/
 │   │   └── index.html
+│   ├── subsite-2/
+│   │   └── index.html
+│   ├── subsite-3/
+│   │   └── index.html
+│   ├── subsite-4/
+│   │   └── index.html
+│   ├── subsite-5/
+│   │   └── index.html
+│   ├── subsite-6/
+│   │   └── index.html
+│   ├── subsite-7/
+│   │   └── index.html
+│   ├── subsite-8/
+│   │   └── index.html
 │   └── subsite-9/
 │       └── index.html
-├── EBSI-THPT-Project/               # Unterprojekt 2
+│
+├── EBSI-THPT-Project/                  # Unterprojekt 2
 │   ├── index.html
 │   ├── use-cases.html
 │   ├── architecture.html
 │   ├── subsite-1/
 │   │   └── index.html
+│   ├── subsite-2/
+│   │   └── index.html
+│   ├── subsite-3/
+│   │   └── index.html
+│   ├── subsite-4/
+│   │   └── index.html
+│   ├── subsite-5/
+│   │   └── index.html
+│   ├── subsite-6/
+│   │   └── index.html
+│   ├── subsite-7/
+│   │   └── index.html
+│   ├── subsite-8/
+│   │   └── index.html
 │   └── subsite-9/
 │       └── index.html
-`
-
+```
 ---
 
 🌐 Technologien & Sprachen
