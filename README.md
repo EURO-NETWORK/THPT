@@ -19,3 +19,140 @@ InterBOxSpiderWeb.NET PRVPNRFAI.py 2025 - 2029
 # *THPT Chip Reihe 1 + EXo Chip Reihe 2 = das vollständige Protokoll- und Programmsystem von THPT.*
 
 ---
+📘 THPT – Modulares Webprojekt mit verschachtelten Unterprojekten
+
+Willkommen im THPT-Repository, einem modularen Webprojekt mit vollständig verschachtelter Pfadstruktur, dynamischer Navigation und systemnaher Erweiterbarkeit. Dieses Projekt kombiniert moderne Webtechnologien mit klassischen Programmiersprachen zur Dokumentation, Automatisierung und strukturellen Validierung.
+
+---
+
+📁 Projektstruktur
+
+`
+THPT/
+├── index.html                        # Hauptseite des Repos
+├── shared-assets/                   # Zentrale CSS, Bilder, Fonts
+│   ├── style.css
+│   └── logo.png
+├── shared-scripts/                  # Globale JavaScript-Funktionen
+│   └── menu.js
+├── shared-data/                     # JSON-Dateien für Navigation & Inhalte
+│   └── navigation.json
+├── shared-components/              # HTML-Templates (Header, Footer)
+│   ├── header.html
+│   └── footer.html
+├── docs/                            # Dokumentation (z. B. Manpages)
+│   └── thptx.1.roff
+├── scripts/                         # Python-Tools zur Automatisierung
+│   └── generate_navigation.py
+├── c-modules/                       # C-Module für Hashing/Validierung
+│   └── hash.c
+├── THPTx/                           # Unterprojekt 1
+│   ├── index.html
+│   ├── use-cases.html
+│   ├── architecture.html
+│   ├── subsite-1/
+│   │   └── index.html
+│   └── subsite-9/
+│       └── index.html
+├── EBSI-THPT-Project/               # Unterprojekt 2
+│   ├── index.html
+│   ├── use-cases.html
+│   ├── architecture.html
+│   ├── subsite-1/
+│   │   └── index.html
+│   └── subsite-9/
+│       └── index.html
+`
+
+---
+
+🌐 Technologien & Sprachen
+
+🧱 HTML
+- Strukturierung aller Seiten (index.html, use-cases.html, etc.)
+- Eingebettet in Haupt- und Unterprojekte
+
+🎨 CSS
+- Zentrales Styling über /shared-assets/style.css
+- Einheitliches Design für alle Projekte und Subsites
+
+⚙️ JavaScript (JS)
+- Dynamisches Dropdown-Menü (/shared-scripts/menu.js)
+- Lädt Navigation aus JSON-Datei
+- Ermöglicht 1-Tap-Back und 2-Tap-Home-Navigation
+
+📦 JSON
+- Menüstruktur in /shared-data/navigation.json
+- Wird von JS verarbeitet, um Navigation automatisch zu erzeugen
+
+🐍 Python
+- Automatisches Generieren der navigation.json aus Dateisystem
+- Skript: /scripts/generate_navigation.py
+
+`python
+
+Beispiel: Python generiert Navigation aus Ordnerstruktur
+import os, json
+
+siehe vollständiges Skript im Projekt
+`
+
+🧠 C
+- Systemnahe Module für z. B. Hashing von Pfaden
+- Beispiel: /c-modules/hash.c
+
+`c
+// Beispiel: einfacher Hash für Seitenpfade
+unsigned int hash(const char *str) {
+    unsigned int h = 0;
+    while (str) h = (h << 5) + str++;
+    return h;
+}
+`
+
+📄 Roff
+- Dokumentation im Unix-Stil (z. B. Manpages)
+- Beispiel: /docs/thptx.1.roff
+
+`roff
+.TH THPTX 1 "Nov 2025"
+.SH NAME
+THPTx \- Verschachteltes Webprojektmodul im THPT-Repository
+`
+
+---
+
+🚀 Navigation & Menüsystem
+
+- Dropdown-Menü wird automatisch aus navigation.json generiert
+- 1× Zurück: javascript:history.back()
+- 2× Zurück (Home): Link zu /index.html
+- Verschachtelung: Unendlich viele Subsites möglich
+
+---
+
+🧩 Erweiterbarkeit
+
+- Neue Projekte einfach als Ordner im Root anlegen
+- Subsites in jedem Projekt möglich (subsite-1 bis subsite-9)
+- Gemeinsame Ressourcen über /shared-* einbindbar
+
+---
+
+🛠️ Setup & Nutzung
+
+1. Repository klonen
+2. Lokalen Webserver starten (z. B. mit Python):
+   `bash
+   python3 -m http.server
+   `
+3. Menüstruktur aktualisieren:
+   `bash
+   python3 scripts/generate_navigation.py
+   `
+4. Optional: C-Module kompilieren
+   `bash
+   gcc c-modules/hash.c -o hash
+   `
+
+---
