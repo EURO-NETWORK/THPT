@@ -1,0 +1,36 @@
+name: Generate Block Box
+
+on:
+  push:
+    paths:
+      - '**.html'
+      - '**.js'
+      - '**.css'
+      - '**.json'
+      - '**.py'
+      - '**.c'
+      - '**.roff'
+      - '**.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Run hash_blocks.py
+        run: python3 scripts/hash_blocks.py
+
+      - name: Commit block-box.json
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add shared-data/block-box.json
+          git commit -m "Update block-box.json"
+          git push
