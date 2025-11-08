@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>THPT-BOxExplorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="explorer.js"></script>
+</head>
+<body>
+  <header>
+    <h1>THPT-BOxExplorer</h1>
+    <p>Interaktiver Explorer für THPT-Blöcke und thematische Tags</p>
+  </header>
+
+  <main>
+    <section id="tag-filter">
+      <h2>Filter nach Tag</h2>
+      <select id="tagSelector">
+        <option value="">-- Tag wählen --</option>
+        <option value="AAI">AAI</option>
+        <option value="THPT">THPT</option>
+        <option value="Majorana">Majorana</option>
+        <option value="Rehabilitation">Rehabilitation</option>
+      </select>
+      <div id="tagLinks"></div>
+    </section>
+
+    <section id="block-viewer">
+      <h2>Block-Datenbank</h2>
+      <button id="loadBlocks">Blöcke laden</button>
+      <pre id="blockOutput"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 THPT Infrastructure – J.K</p>
+  </footer>
+</body>
+</html>
