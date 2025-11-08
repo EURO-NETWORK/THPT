@@ -1,0 +1,33 @@
+name: Generate Navigation and Hashes
+
+on:
+  push:
+    paths:
+      - '**.html'
+      - 'scripts/**.py'
+      - 'shared-data/**.json'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install --upgrade pip
+
+      - name: Generate navigation.json
+        run: python scripts/generate_navigation.py
+
+      - name: Generate block-box.json
+        run: python scripts/hash_blocks.py
+
+      - name: Validate navigation.json
+        run: python scripts/validate-navigation.py

@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "name": "THPT",
+      "index": "index.html"
+    },
+    {
+      "name": "THPTx",
+      "index": "THPTx/index.html",
+      "subsites": [
+        { "name": "Subsite 1", "path": "THPTx/subsite-1/index.html" },
+        { "name": "Subsite 2", "path": "THPTx/subsite-2/index.html" },
+        { "name": "Subsite 3", "path": "THPTx/subsite-3/index.html" }
+      ]
+    },
+    {
+      "name": "EBSI-THPT-Project",
+      "index": "EBSI-THPT-Project/index.html",
+      "subsites": [
+        { "name": "Subsite 1", "path": "EBSI-THPT-Project/subsite-1/index.html" },
+        { "name": "Subsite 2", "path": "EBSI-THPT-Project/subsite-2/index.html" }
+      ]
+    },
+    {
+      "name": "THPT-BOxExplorer",
+      "index": "THPT-BOxExplorer/index.html"
+    }
+  ]
+}
