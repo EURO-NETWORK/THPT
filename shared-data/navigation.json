@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "name": "THPT",
+      "index": "index.html",
+      "subsites": [
+        { "name": "Subsite 1", "path": "subsite-1/index.html" },
+        { "name": "Subsite 2", "path": "subsite-2/index.html" },
+        { "name": "Subsite 3", "path": "subsite-3/index.html" },
+        { "name": "Subsite 4", "path": "subsite-4/index.html" },
+        { "name": "Subsite 5", "path": "subsite-5/index.html" },
+        { "name": "Subsite 6", "path": "subsite-6/index.html" },
+        { "name": "Subsite 7", "path": "subsite-7/index.html" },
+        { "name": "Subsite 8", "path": "subsite-8/index.html" },
+        { "name": "Subsite 9", "path": "subsite-9/index.html" }
+      ]
+    },
+    {
+      "name": "THPTx",
+      "index": "THPTx/index.html",
+      "subsites": [
+        { "name": "Subsite 1", "path": "THPTx/subsite-1/index.html" },
+        { "name": "Subsite 2", "path": "THPTx/subsite-2/index.html" },
+        { "name": "Subsite 3", "path": "THPTx/subsite-3/index.html" },
+        { "name": "Subsite 4", "path": "THPTx/subsite-4/index.html" },
+        { "name": "Subsite 5", "path": "THPTx/subsite-5/index.html" },
+        { "name": "Subsite 6", "path": "THPTx/subsite-6/index.html" },
+        { "name": "Subsite 7", "path": "THPTx/subsite-7/index.html" },
+        { "name": "Subsite 8", "path": "THPTx/subsite-8/index.html" },
+        { "name": "Subsite 9", "path": "THPTx/subsite-9/index.html" }
+      ]
+    },
+    {
+      "name": "EBSI-THPT-Project",
+      "index": "EBSI-THPT-Project/index.html",
+      "subsites": [
+        { "name": "Subsite 1", "path": "EBSI-THPT-Project/subsite-1/index.html" },
+        { "name": "Subsite 2", "path": "EBSI-THPT-Project/subsite-2/index.html" },
+        { "name": "Subsite 3", "path": "EBSI-THPT-Project/subsite-3/index.html" },
+        { "name": "Subsite 4", "path": "EBSI-THPT-Project/subsite-4/index.html" },
+        { "name": "Subsite 5", "path": "EBSI-THPT-Project/subsite-5/index.html" },
+        { "name": "Subsite 6", "path": "EBSI-THPT-Project/subsite-6/index.html" },
+        { "name": "Subsite 7", "path": "EBSI-THPT-Project/subsite-7/index.html" },
+        { "name": "Subsite 8", "path": "EBSI-THPT-Project/subsite-8/index.html" },
+        { "name": "Subsite 9", "path": "EBSI-THPT-Project/subsite-9/index.html" }
+      ]
+    },
+    {
+      "name": "THPT-BOxExplorer",
+      "index": "THPT-BOxExplorer/index.html",
+      "subsites": [
+        { "name": "Subsite 1", "path": "THPT-BOxExplorer/subsite-1/index.html" },
+        { "name": "Subsite 2", "path": "THPT-BOxExplorer/subsite-2/index.html" },
+        { "name": "Subsite 3", "path": "THPT-BOxExplorer/subsite-3/index.html" },
+        { "name": "Subsite 4", "path": "THPT-BOxExplorer/subsite-4/index.html" },
+        { "name": "Subsite 5", "path": "THPT-BOxExplorer/subsite-5/index.html" },
+        { "name": "Subsite 6", "path": "THPT-BOxExplorer/subsite-6/index.html" },
+        { "name": "Subsite 7", "path": "THPT-BOxExplorer/subsite-7/index.html" },
+        { "name": "Subsite 8", "path": "THPT-BOxExplorer/subsite-8/index.html" },
+        { "name": "Subsite 9", "path": "THPT-BOxExplorer/subsite-9/index.html" }
+      ]
+    }
+  ]
+}

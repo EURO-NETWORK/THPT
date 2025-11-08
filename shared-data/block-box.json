@@ -1,0 +1,42 @@
+{
+  "blocks": [
+    { "path": "index.html", "hash": "HASH_INDEX", "timestamp": "2025-11-08T21:18:00Z", "type": "html" },
+
+    { "path": "THPTx/index.html", "hash": "HASH_THPTX", "timestamp": "2025-11-08T21:18:01Z", "type": "html" },
+    { "path": "THPTx/subsite-1/index.html", "hash": "HASH_THPTX_1", "timestamp": "2025-11-08T21:18:02Z", "type": "html" },
+    { "path": "THPTx/subsite-2/index.html", "hash": "HASH_THPTX_2", "timestamp": "2025-11-08T21:18:03Z", "type": "html" },
+    { "path": "THPTx/subsite-3/index.html", "hash": "HASH_THPTX_3", "timestamp": "2025-11-08T21:18:04Z", "type": "html" },
+    { "path": "THPTx/subsite-4/index.html", "hash": "HASH_THPTX_4", "timestamp": "2025-11-08T21:18:05Z", "type": "html" },
+    { "path": "THPTx/subsite-5/index.html", "hash": "HASH_THPTX_5", "timestamp": "2025-11-08T21:18:06Z", "type": "html" },
+    { "path": "THPTx/subsite-6/index.html", "hash": "HASH_THPTX_6", "timestamp": "2025-11-08T21:18:07Z", "type": "html" },
+    { "path": "THPTx/subsite-7/index.html", "hash": "HASH_THPTX_7", "timestamp": "2025-11-08T21:18:08Z", "type": "html" },
+    { "path": "THPTx/subsite-8/index.html", "hash": "HASH_THPTX_8", "timestamp": "2025-11-08T21:18:09Z", "type": "html" },
+    { "path": "THPTx/subsite-9/index.html", "hash": "HASH_THPTX_9", "timestamp": "2025-11-08T21:18:10Z", "type": "html" },
+
+    { "path": "EBSI-THPT-Project/index.html", "hash": "HASH_EBSI", "timestamp": "2025-11-08T21:18:11Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-1/index.html", "hash": "HASH_EBSI_1", "timestamp": "2025-11-08T21:18:12Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-2/index.html", "hash": "HASH_EBSI_2", "timestamp": "2025-11-08T21:18:13Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-3/index.html", "hash": "HASH_EBSI_3", "timestamp": "2025-11-08T21:18:14Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-4/index.html", "hash": "HASH_EBSI_4", "timestamp": "2025-11-08T21:18:15Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-5/index.html", "hash": "HASH_EBSI_5", "timestamp": "2025-11-08T21:18:16Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-6/index.html", "hash": "HASH_EBSI_6", "timestamp": "2025-11-08T21:18:17Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-7/index.html", "hash": "HASH_EBSI_7", "timestamp": "2025-11-08T21:18:18Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-8/index.html", "hash": "HASH_EBSI_8", "timestamp": "2025-11-08T21:18:19Z", "type": "html" },
+    { "path": "EBSI-THPT-Project/subsite-9/index.html", "hash": "HASH_EBSI_9", "timestamp": "2025-11-08T21:18:20Z", "type": "html" },
+
+    { "path": "THPT-BOxExplorer/index.html", "hash": "HASH_EXPLORER", "timestamp": "2025-11-08T21:18:21Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-1/index.html", "hash": "HASH_EXPLORER_1", "timestamp": "2025-11-08T21:18:22Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-2/index.html", "hash": "HASH_EXPLORER_2", "timestamp": "2025-11-08T21:18:23Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-3/index.html", "hash": "HASH_EXPLORER_3", "timestamp": "2025-11-08T21:18:24Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-4/index.html", "hash": "HASH_EXPLORER_4", "timestamp": "2025-11-08T21:18:25Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-5/index.html", "hash": "HASH_EXPLORER_5", "timestamp": "2025-11-08T21:18:26Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-6/index.html", "hash": "HASH_EXPLORER_6", "timestamp": "2025-11-08T21:18:27Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-7/index.html", "hash": "HASH_EXPLORER_7", "timestamp": "2025-11-08T21:18:28Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-8/index.html", "hash": "HASH_EXPLORER_8", "timestamp": "2025-11-08T21:18:29Z", "type": "html" },
+    { "path": "THPT-BOxExplorer/subsite-9/index.html", "hash": "HASH_EXPLORER_9", "timestamp": "2025-11-08T21:18:30Z", "type": "html" },
+
+    { "path": "shared-scripts/link-map.js", "hash": "HASH_LINKMAP", "timestamp": "2025-11-08T21:18:31Z", "type": "js" },
+    { "path": "shared-data/navigation.json", "hash": "HASH_NAVIGATION", "timestamp": "2025-11-08T21:18:32Z", "type": "json" },
+    { "path": "scripts/hash_blocks.py", "hash": "HASH_SCRIPT", "timestamp": "2025-11-08T21:18:33Z", "type": "py" }
+  ]
+}
